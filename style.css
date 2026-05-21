@@ -1,0 +1,69 @@
+/*UNTUK PAPARAN HEADER */ 
+.header {
+width: 1207px;
+height: 200px;
+/*LETAKKAN GAMBAR HEADER-> FOLDER IMEJ */ 
+background: url('imej/banner.jpg'); 
+border: solid #8b9697 4px;
+background-size: cover;
+color: rgb(0, 0, 0);
+-webkit-text-fill-color: rgb(255, 255, 255);
+-webkit-text-stroke: 1.5px;
+text-align: center;
+padding-left: 5%;
+padding-right: 5%;
+}
+/* UNTUK PAPARAN MENU-KIRI */
+#menu {
+width: 20%;
+left: 5%;
+float: left;
+}
+/*UNTUK PAPARAN ISI LAMAN */
+#isi{
+width: 80%;
+float: left;
+overflow-wrap: break-word;
+}
+/*UNTUK BUTANG */
+button{
+background-color:#c25ef0;
+color:rgb(5, 5, 5);
+padding:5px 20px;
+display: inline-block;
+}
+button:hover {
+background-color: #9b9c9c;
+}
+/*UNTUK BACKGROUD */ 
+body {
+/* WARNA BACKGROUND */ 
+background: #fcc3fa;
+}
+/*UNTUK PAPARAN TABLE */
+table {
+border-collapse: separate;
+width: auto;
+table-layout: fixed; 
+}
+th, td {
+text-align: center;
+padding: 8px;
+}
+/*UNTUK PAPARAN ROW TABLE */
+tr:nth-child(even) {background-color: #60dee7;}
+tr:hover {background-color: #8f8f91;}
+/*UNTUK FUNGSI CETAKAN */
+@media print {
+.header, select, form, #menu, #sembunyi, button
+{display: none; }
+#printarea, div {
+top:0;
+left:1%;
+padding:0;
+width: 100%;
+}
+}
+html {
+font-family: Arial, Helvetica, sans-serif;
+}
